@@ -1,0 +1,110 @@
+.primary{
+    color:orange;
+}
+.font-xl{
+    font-size: 72px;
+}
+.header{
+    background-color: #c0c0f7;
+    font-style: pacifico;
+    height: 50px;
+    color:black;
+    font-size: 100%;
+    vertical-align: top;
+    text-align: left;
+}
+
+input[type=text], input[type=password] {
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+body
+{
+  font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+  background: #e9eaea;
+  font-family: roboto;
+  user-select: none;
+}
+#wrapper_page
+{
+  font-size: 1.2em;
+}
+
+label{
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+    margin-top: 1rem;
+}
+.Password{
+    font: small-caption;
+    font-size: 16px;
+    display: block;  
+    color: #bdbdbd;  
+    font-family: "Castellar";  
+    margin-left: 2%;  
+    margin-top:2%;  
+    padding: 2%;  
+    width: 80%; 
+}
+.username{
+    display: block;  
+    color: #bdbdbd;  
+    font-family: "Castellar";  
+    margin-left: 2%;  
+    margin-top:2%;  
+    padding: 2%;  
+    width: 80%; 
+    font-size: 16px;
+}
+.container{
+    float: right;
+    padding: 16px;
+    width: 450px;
+    margin: 30px auto;
+}
+.signup-form {
+    background-color: rgb(83, 175, 211);
+}
+.login-form{
+    background-color: rgb(83, 175, 211);
+}
+@media screen and (max-width: 300px) {
+    span.psw{
+      display: block;
+      float: none;
+    }
+    .cancelbtn{
+      width: 100%;
+    }
+}
+
+form{
+    border: 3px solid #f1f1f1;
+}
+.login-form{
+    background: #fff;
+    padding: 40px;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    height: 400px;
+}
+.input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    color: #3e3e40;
+    font-size: 14px;
+    outline: none;
+    transform: all 0.5s ease;
+}
+.input:focus{
+    border: 2px solid #34b3a0;
+}
