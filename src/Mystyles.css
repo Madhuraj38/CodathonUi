@@ -1,78 +1,101 @@
-.primary{
-    color:orange;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.font-xl{
-    font-size: 72px;
-}
+  .body{
+    background-color: #d5d8db;
+  }
 .header{
-    background-color: #c0c0f7;
-    font-style: pacifico;
+    background-color: #d5d8db;
+    font-family: 'Pacifico', cursive;
     height: 50px;
     color:black;
-    font-size: 100%;
+    font-size: 15px;
+    padding: 5px;
     vertical-align: top;
     text-align: left;
 }
-
-input[type=text], input[type=password] {
+.tabs .tabs-active{
+  width: 430px;
+}
+.tab-left{
+  margin-left: 80px;
+  margin-right: 50px;
+  float: left;
+}
+.tab-right{
+  margin-left: 50px;
+  margin-right: 100px;
+  float: right;
+}
+.tabs span{
     display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-body
-{
-  font: normal 62.5% "Lucida Sans Unicode",sans-serif;
-  background: #e9eaea;
-  font-family: roboto;
-  user-select: none;
-}
-#wrapper_page
-{
-  font-size: 1.2em;
+    cursor: pointer;
+    background-color:#57bce4 ;
+    padding: 6px 0px;
 }
 
-label{
-    display: block;
-    font: .9rem 'Fira Sans', sans-serif;
-    margin-top: 1rem;
-}
-.Password{
-    font: small-caption;
-    font-size: 16px;
-    display: block;  
-    color: #bdbdbd;  
-    font-family: "Castellar";  
-    margin-left: 2%;  
-    margin-top:2%;  
-    padding: 2%;  
-    width: 80%; 
-}
-.username{
-    display: block;  
-    color: #bdbdbd;  
-    font-family: "Castellar";  
-    margin-left: 2%;  
-    margin-top:2%;  
-    padding: 2%;  
-    width: 80%; 
-    font-size: 16px;
-}
+
+
 .container{
     float: right;
     padding: 16px;
-    width: 450px;
+    width: 500px;
     margin: 30px auto;
 }
-.signup-form {
-    background-color: rgb(83, 175, 211);
+.form {
+    width: 100%;
+    min-height: 40vh;
+    padding: 0 20px;
+    display: flex;
+  }
+.form .login{
+    padding: 30px;
+  margin: auto;
+  width: 100%;
+  max-width: 510px;
+  min-height: 300px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  background-color: skyblue;
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
 }
-.login-form{
-    background-color: rgb(83, 175, 211);
-}
+.form .login  label {
+    color: white;
+    margin: 14px 0;
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+  }
+  
+  .form .login input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+    background: rgba(213, 218, 218, 0.89);
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .form .login  .btnContainer {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #57bce4;
+    color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  }
+  .form .login  .btnContainer  span:hover {
+    color: red;
+  }
 @media screen and (max-width: 300px) {
     span.psw{
       display: block;
@@ -83,28 +106,3 @@ label{
     }
 }
 
-form{
-    border: 3px solid #f1f1f1;
-}
-.login-form{
-    background: #fff;
-    padding: 40px;
-    clear: both;
-    width: 100%;
-    box-sizing: border-box;
-    height: 400px;
-}
-.input{
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 25px;
-    border: 2px solid #e9eaea;
-    color: #3e3e40;
-    font-size: 14px;
-    outline: none;
-    transform: all 0.5s ease;
-}
-.input:focus{
-    border: 2px solid #34b3a0;
-}

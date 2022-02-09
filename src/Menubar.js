@@ -1,19 +1,31 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as FaICons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import './Menubar.css';
+import { IconContext } from 'react-icons';
 function Menubar() {
+    const [sidebar, setSidebar] = useState(true);
+
+  const showSidebar = () => setSidebar(!sidebar);
   return (
       <>
         <div className='header'>
-            <h1>YOUR GUIDE</h1>
+            <h1>Your Guide</h1>
         </div>
+        <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
             <Link to='#' className='menu'>
-                <FaICons.FaBars/>
+                <FaICons.FaBars onClick={showSidebar} />
             </Link>
         </div>
-        <nav className='nav-menu'>
-            <ul className='nav-list'>
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+            <ul className='nav-list' onClick={showSidebar}>
+            <li className='navbar-toggle'>
+              <Link to='#' className='menu-bars'>
+                <AiIcons.AiOutlineClose />
+              </Link>
+            </li>
                 <li className='nav-text'>
                     <Link to='/'>
                         <span>Placements</span>
@@ -46,6 +58,7 @@ function Menubar() {
                 </li>
             </ul>
         </nav>
+        </IconContext.Provider>
       </>
   );
 }
