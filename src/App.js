@@ -2,29 +2,26 @@
 import './App.css';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Menubar from './Menubar';
-import Placements from './pages/Placements';
-import  Ebook from './pages/Ebook';
-import  Competitions from './pages/Competitions';
-import Tutorials from './pages/Tutorials';
-import Roadmaps from './pages/Roadmaps';
-import Newsfeed from './pages/Newsfeed';
 
+import Login from './Login';
+/*import Display from './Display';
+<Routes>
+<Route path='/' exact element={<Login/>}/>
+            <Route path='/Menubar' exact element={<Menubar/>}/>
+      </Routes>
+*/
 function App() {
   return(
     <>
       <Router>
-        <Menubar/>
-        <Routes>
-            <Route path='/' exact element={<Placements/>}/>
-            <Route path='/competitions'  element={<Competitions/>}/>
-            <Route path='/Ebook'  element={<Ebook/>}/>
-            <Route path='/Tutorials'  element={<Tutorials/>}/>
-            <Route path='/Roadmaps'  element={<Roadmaps/>}/>
-            <Route path='/Newsfeed'  element={<Newsfeed/>}/>
-        </Routes>
+      <Routes>
+<Route path='/' exact element={<Login/>}/>
+            <Route path='/Menubar' exact element={<Menubar/>}/>
+      </Routes>
+      
       </Router>
     </>
   );
 }
-
 export default App;
+
